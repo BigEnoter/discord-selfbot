@@ -17,6 +17,6 @@ Step#2: fill it as shown in example below -
 }
 ```
 
-Step#3: type `npm install` to install all modules project needs
+Step#3: type `npm install` in cmd or whatever u use as terminal to install all modules project needs
 
 Step#4: run the bot via `run.bat`
