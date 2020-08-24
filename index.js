@@ -26,7 +26,7 @@ client.on("message", (message) => {
 
     if (message.author.id == "294882584201003009") {
         if (message.content == "<:yay:585696613507399692>   **GIVEAWAY**   <:yay:585696613507399692>") {
-            message.react("🎉");
+            setTimeout(() => { message.react("🎉") }, 5* 1000); // timeout of 5 seconds before reacting
             console.log(`[Sniper | GiveawayJoiner] Joined giveaway in: ${message.guild.name} | Prize: ${message.embeds[0].author.name} | Time: ${giveawayRegex.exec(message.embeds[0].description)[0].substr(16)}`)
         };
     };
