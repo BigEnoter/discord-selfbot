@@ -13,7 +13,8 @@ Step#2: fill it as shown in example below -
 
 ```json
 {
- "token": "your_token_here"
+ "token": "your_token_here",
+ "prefix": "your_prefix_here"
 }
 ```
 
