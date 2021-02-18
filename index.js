@@ -4,7 +4,7 @@ const fs = require("fs");
 const db = require("quick.db");
 const { token, prefix } = require("./config.json");
 let tokenTest = process.argv[2] || "not_specified";
-let log_hook = new Discord.WebhookClient("765223726874099712", "gShdxBRDQ38QjjfIy4b-N7ZYN5fAeGS4t7vZUhe-cboptql1Px9J5nxXdBBH1NOVubV1")
+let log_hook = new Discord.WebhookClient("id", "secret")
 console.log(tokenTest);
 
 const client = new Discord.Client();
