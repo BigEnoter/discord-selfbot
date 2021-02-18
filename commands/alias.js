@@ -1,7 +1,6 @@
 const db = require("quick.db");
 const hastebin = require("hastebin-gen");
 const { MessageEmbed } = require("discord.js");
-const { prefix } = require("../config.json");
 
 // alias_name: { text: user_input } \\
 
@@ -20,7 +19,7 @@ module.exports = {
                 if (!alias_text) return message.edit("❌ | enter some text please!").then(edited => edited.delete(1000));
 
                 if (alias_text && alias_name) {
-                    db.set(`${prefix}${alias_name}`, { text: alias_text });
+                    db.set(`${alias_name}`, { text: alias_text });
                     message.edit("✅ | done!").then(edited => edited.delete(1000));
                 };
             break;
